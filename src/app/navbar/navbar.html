@@ -1,0 +1,22 @@
+<nav class="nav">
+  <div class="nav-brand">
+    <a routerLink="/" class="nav-logo">
+      <span class="nav-mark"></span>
+      <span class="nav-text">
+        <span class="nav-name">Your Name</span>
+        <span class="nav-role">Software Engineer · Portfolio</span>
+      </span>
+    </a>
+  </div>
+
+  <button class="nav-toggle" type="button" aria-label="Toggle navigation">
+    ☰
+  </button>
+
+  <div class="nav-links">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">About</a>
+    <a routerLink="/services" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Services</a>
+    <a routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Contact</a>
+  </div>
+</nav>

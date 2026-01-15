@@ -1,0 +1,64 @@
+:host {
+  --bg: #050816;
+  --bg-elevated: #0b1020;
+  --accent: #3b82f6;
+  --accent-soft: rgba(59, 130, 246, 0.12);
+  --accent-strong: rgba(59, 130, 246, 0.2);
+  --border-subtle: rgba(148, 163, 184, 0.25);
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+  --text-soft: #6b7280;
+  --danger: #ef4444;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text-main);
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #1f2937 0, #020617 45%, #000 100%);
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #020617 0%, #020617 40%, #020617 100%);
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgba(2, 6, 23, 0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.9);
+}
+
+.app-content {
+  flex: 1;
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.app-footer {
+  border-top: 1px solid rgba(15, 23, 42, 0.9);
+  padding: 1.25rem 1.5rem 1.75rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  background: radial-gradient(circle at top, #020617 0, #020617 55%, #020617 100%);
+}
+
+.app-footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .app-content {
+    padding-inline: 1.25rem;
+    padding-top: 1.75rem;
+  }
+}

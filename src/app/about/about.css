@@ -1,0 +1,103 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-header {
+  max-width: 44rem;
+}
+
+.about-header h1 {
+  margin: 0.25rem 0 0.75rem;
+  font-size: 1.9rem;
+}
+
+.about-header p {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 0.98rem;
+}
+
+.eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #9ca3af;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2.2fr);
+  gap: 1.75rem;
+}
+
+.about-panel {
+  padding: 1.2rem 1.25rem;
+  border-radius: 0.9rem;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(30, 64, 175, 0.75);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.75);
+}
+
+.about-panel--secondary {
+  background: rgba(15, 23, 42, 0.85);
+  border-color: rgba(30, 64, 175, 0.45);
+}
+
+.about-panel h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.02rem;
+}
+
+.about-panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.about-panel li h3 {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+.about-panel li p {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.about-panel li p.meta {
+  font-size: 0.82rem;
+  color: #6b7280;
+}
+
+.about-panel dl {
+  margin: 0.25rem 0 0;
+}
+
+.about-panel dl div + div {
+  margin-top: 0.55rem;
+}
+
+.about-panel dt {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #6b7280;
+}
+
+.about-panel dd {
+  margin: 0.1rem 0 0;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+@media (max-width: 900px) {
+  .about-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
