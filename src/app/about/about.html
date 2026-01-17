@@ -1,57 +1,244 @@
 <section class="about">
   <header class="about-header">
     <p class="eyebrow">About</p>
-    <h1>Profile &amp; background</h1>
-    <p>
-      I'm a software engineer focused on building reliable, maintainable web applications.
-      I enjoy working across the stack, with a particular interest in front‑end architecture,
-      design systems, and collaborative product development.
+    <h1>Profile & Background</h1>
+    <p class="about-intro">
+      I am a motivated final-year cybersecurity student with strong academic performance and practical experience in software testing, secure system development, and quality assurance practices. My academic and project work centers on applying security principles throughout the Software Development Life Cycle (SDLC) from requirements and test planning to automation, performance testing, and vulnerability analysis.
     </p>
+    <div class="intro-highlight">
+      <div class="highlight-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+      </div>
+      <p>Currently developing a Final Year Project addressing QR code fraud, a real-world security issue. I am detail-oriented, disciplined, and comfortable working both independently and in team-based environments.</p>
+    </div>
   </header>
 
   <div class="about-layout">
-    <article class="about-panel">
-      <h2>Experience</h2>
-      <ul>
-        <li>
-          <h3>Senior Software Engineer</h3>
-          <p class="meta">Company Name · 2021 – Present</p>
-          <p>
-            Lead development of web applications, mentor engineers, and collaborate with
-            design and product to ship high‑quality features.
-          </p>
-        </li>
-        <li>
-          <h3>Software Engineer</h3>
-          <p class="meta">Company Name · 2018 – 2021</p>
-          <p>
-            Built and maintained front‑end features, optimized performance, and contributed
-            to shared component libraries.
-          </p>
-        </li>
-      </ul>
+    <article class="about-panel about-panel--main">
+      <div class="panel-header">
+        <div class="panel-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+          </svg>
+        </div>
+        <h2>University Project Experience</h2>
+      </div>
+      
+      <div class="projects-timeline">
+        <div class="project-item">
+          <div class="project-year">2025</div>
+          <div class="project-content">
+            <h3>Final Year Project · Secure QR Code Generator System</h3>
+            <div class="project-tags">
+              <span class="tag tag--primary">Security</span>
+              <span class="tag tag--secondary">Full-Stack</span>
+              <span class="tag tag--accent">Testing</span>
+            </div>
+            <p>
+              Designed and developed a secure web application using HTML, CSS, PHP, JavaScript, and MySQL.
+              Implemented ChaCha20-Poly1305 encryption and Argon2id key derivation.
+              Integrated OPSWAT MetaDefender API for malware scanning.
+              Conducted Black Box, SQL Injection, and security testing using Cypress.
+              Applied structured SDLC documentation and evaluation practices.
+            </p>
+            <div class="project-tech">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>Cypress</span>
+              <span>Security Testing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-year">2025</div>
+          <div class="project-content">
+            <h3>Manual & Automated Testing · Banking System Prototype</h3>
+            <div class="project-tags">
+              <span class="tag tag--primary">QA Engineering</span>
+              <span class="tag tag--secondary">Automation</span>
+            </div>
+            <p>
+              Served as QA Engineer in a team-based testing project.
+              Developed IEEE-compliant SRS and test cases.
+              Executed Black Box and Database Testing.
+              Automated test scenarios using Cypress and Selenium.
+            </p>
+            <div class="project-tech">
+              <span>Cypress</span>
+              <span>Selenium</span>
+              <span>IEEE Standards</span>
+              <span>Database Testing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-year">2025</div>
+          <div class="project-content">
+            <h3>SAST & Performance Testing · Restaurant Booking System</h3>
+            <div class="project-tags">
+              <span class="tag tag--primary">Performance</span>
+              <span class="tag tag--accent">Security Analysis</span>
+            </div>
+            <p>
+              Conducted Static Application Security Testing (SAST) using SonarQube. 
+              Analyzed code smells, vulnerabilities, and quality metrics. 
+              Designed JMeter load tests to evaluate system performance and reliability.
+            </p>
+            <div class="project-tech">
+              <span>SonarQube</span>
+              <span>JMeter</span>
+              <span>Performance Testing</span>
+              <span>SAST</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-year">2025</div>
+          <div class="project-content">
+            <h3>Conference Management System · Software Quality Management</h3>
+            <div class="project-tags">
+              <span class="tag tag--secondary">Agile</span>
+              <span class="tag tag--primary">Project Management</span>
+            </div>
+            <p>
+              Applied Agile and Scrum practices using Jira to manage a Conference Management System project. 
+              Defined epics, user stories, and sprint tasks, configured workflows, and analyzed sprint metrics 
+              to evaluate process efficiency and support software quality objectives.
+            </p>
+            <div class="project-tech">
+              <span>Jira</span>
+              <span>Agile/Scrum</span>
+              <span>Sprint Management</span>
+              <span>Quality Metrics</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </article>
 
-    <aside class="about-panel about-panel--secondary">
-      <h2>At a glance</h2>
-      <dl>
-        <div>
-          <dt>Location</dt>
-          <dd>Your City, Country</dd>
+    <aside class="about-panel about-panel--sidebar">
+      <!-- Profile Image Section -->
+      <div class="profile-section">
+        <div class="profile-image-container">
+          <img src="profile.jpg?v=1" alt="Daniel Haikal - Computer Science Student" class="about-profile-image" 
+               onerror="console.log('Image failed to load:', this.src); this.style.display='none'; document.querySelector('.about-image-fallback').style.display='flex';" 
+               onload="console.log('Image loaded successfully:', this.src); document.querySelector('.about-image-fallback').style.display='none';" />
+          <div class="about-image-fallback">
+            <div class="fallback-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <span>Daniel Haikal</span>
+          </div>
+          <div class="profile-overlay">
+            <div class="profile-badge">
+              <div class="status-dot"></div>
+              <span>Final Year Student</span>
+            </div>
+          </div>
         </div>
-        <div>
-          <dt>Roles</dt>
-          <dd>Software Engineer, Front‑end Engineer</dd>
+      </div>
+
+      <div class="panel-header">
+        <div class="panel-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
         </div>
-        <div>
-          <dt>Stacks</dt>
-          <dd>Angular, TypeScript, Node, REST/GraphQL</dd>
+        <h2>At a Glance</h2>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <dt>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            Location
+          </dt>
+          <dd>Selangor, Malaysia</dd>
         </div>
-        <div>
-          <dt>Interests</dt>
-          <dd>Design systems, DX tooling, performance</dd>
+        
+        <div class="info-item">
+          <dt>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+              <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+            </svg>
+            Target Roles
+          </dt>
+          <dd>Software Testing Intern · QA Intern · Security-Focused Software Intern</dd>
         </div>
-      </dl>
+        
+        <div class="info-item">
+          <dt>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+            Technical Stack
+          </dt>
+          <dd>
+            <div class="tech-tags">
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>Cypress</span>
+              <span>Selenium</span>
+              <span>JMeter</span>
+              <span>Jira</span>
+              <span>GitHub</span>
+            </div>
+          </dd>
+        </div>
+        
+        <div class="info-item">
+          <dt>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+            Interests
+          </dt>
+          <dd>Secure SDLC · Software Quality · Automation Testing · Performance Testing</dd>
+        </div>
+      </div>
+
+      <div class="achievements">
+        <h3>Key Achievements</h3>
+        <div class="achievement-list">
+          <div class="achievement">
+            <div class="achievement-icon">🏆</div>
+            <div class="achievement-content">
+              <span class="achievement-title">Dean's List</span>
+              <span class="achievement-desc">6 consecutive semesters</span>
+            </div>
+          </div>
+          <div class="achievement">
+            <div class="achievement-icon">📊</div>
+            <div class="achievement-content">
+              <span class="achievement-title">CGPA 3.89</span>
+              <span class="achievement-desc">Computer Science (Cybersecurity)</span>
+            </div>
+          </div>
+          <div class="achievement">
+            <div class="achievement-icon">🔒</div>
+            <div class="achievement-content">
+              <span class="achievement-title">Security Focus</span>
+              <span class="achievement-desc">Real-world project experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </aside>
   </div>
 </section>
