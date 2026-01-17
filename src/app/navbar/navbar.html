@@ -9,14 +9,18 @@
     </a>
   </div>
 
-  <button class="nav-toggle" type="button" aria-label="Toggle navigation">
-    ☰
+  <button class="nav-toggle" type="button" aria-label="Toggle navigation" (click)="toggleMenu()" [class.active]="isMenuOpen">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
   </button>
 
-  <div class="nav-links">
-    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-    <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">About</a>
-    <a routerLink="/services" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Services</a>
-    <a routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Contact</a>
+  <div class="nav-links" [class.nav-links--open]="isMenuOpen">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">Home</a>
+    <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">About</a>
+    <a routerLink="/services" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">Services</a>
+    <a routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">Contact</a>
   </div>
+
+  <div class="nav-overlay" [class.nav-overlay--visible]="isMenuOpen" (click)="closeMenu()"></div>
 </nav>
